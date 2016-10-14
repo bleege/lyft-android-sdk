@@ -51,8 +51,8 @@ public class SampleLocationAwareActivity extends Activity {
         setContentView(R.layout.activity_sample_location_aware);
 
         ApiConfig apiConfig = new ApiConfig.Builder()
-                .setClientId("your_client_id")
-                .setClientToken("your_client_token")
+                .setClientId(getString(R.string.lyft_client_id))
+                .setClientToken(getString(R.string.lyft_client_token))
                 .build();
 
         lyftButton = (LyftButton) findViewById(R.id.lyft_button);

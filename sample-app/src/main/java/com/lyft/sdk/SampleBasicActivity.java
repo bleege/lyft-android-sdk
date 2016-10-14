@@ -16,8 +16,8 @@ public class SampleBasicActivity extends Activity {
         setContentView(R.layout.activity_sample_basic);
 
         ApiConfig apiConfig = new ApiConfig.Builder()
-                .setClientId("your_client_id")
-                .setClientToken("your_client_token")
+                .setClientId(getString(R.string.lyft_client_id))
+                .setClientToken(getString(R.string.lyft_client_token))
                 .build();
 
         LyftButton lyftButton = (LyftButton) findViewById(R.id.lyft_button);
